@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brafé</title>
+  <link rel="stylesheet" href="./assets/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="bg-zinc-950 sticky top-0 z-50">
+    <div class="2xl px-6 py-3 md:px-14 md:py-10 flex items-center justify-between">
+      <div>
+        <a href="#"><img src="./assets/img/brafe.png" alt="Logo Brafé" class="h-6 md:h-9"></a>
+      </div>
+  
+      <nav>
+        <ul class="gap-2 hidden md:flex">
+          <li><a href="#" class="text-neutral-100 hover:text-amber-700 py-2 px-3 text-sm md:text-lg tracking-wide duration-300">Sobre</a></li>
+          <li><a href="#" class="text-neutral-100 hover:text-amber-700 py-2 px-3 text-sm md:text-lg tracking-wide duration-300">Produtos</a></li>
+          <li><a href="#" class="text-neutral-100 hover:text-amber-700 py-2 px-3 text-sm md:text-lg tracking-wide duration-300">Portfólio</a></li>
+          <li><a href="#" class="text-neutral-100 hover:text-amber-700 py-2 px-3 text-sm md:text-lg tracking-wide duration-300">Contato</a></li>
+        </ul>
+        <a href="#" class="text-neutral-100 block md:hidden text-5xl">≡</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="p-8 sm:p-20 md:p-40">
+    <div class="grid justify-items-center">
+      <h1 class="uppercase text-4xl sm:text-5xl text-center text-neutral-100 font-bold tracking-wide mb-8 sm:mb-10">Cafés com a cara<br>do Brasil</h1>
+      <p class="text-neutral-100 italic tracking-wide text-center text-xs sm:text-base">Direto das fazendas de Minas Gerais</p>
+    </div>
+  </main>
+
+  <section class="bg-neutral-100">
+    <div class="2xl px-6 py-10 md:px-16 md:py-14 grid justify-items-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-zinc-950 text-center">Uma Mistura de</h2>
+      <div class="flex flex-col md:flex-row justify-center gap-8 py-10 md:py-12">
+        <div class="hover:scale-105 duration-300">
+          <img src="./assets/img/cafe-1.jpg" alt="Café com um desenho por cima">
+          <h3 class="bg-zinc-950 inline-block px-10 py-2 text-neutral-100 italic text-2xl amor">amor</h3>
+        </div>
+        <div class="hover:scale-105 duration-300">
+          <img src="./assets/img/cafe-2.jpg" alt="Xícara de café sendo enchida">
+          <h3 class="bg-zinc-950 inline-block px-10 py-2 text-neutral-100 italic text-2xl perfeicao">perfeição</h3>
+        </div>
+      </div>
+      <p class="text-xs md:text-sm max-w-md text-center italic py-0 md:py-4">O café é uma bebida produzida a partir dos grãos torrados do fruto do cafeeiro. É servido tradicionalmente quente, mas também pode ser consumido gelado. Ele é um estimulante, por possuir cafeína - geralmente 80 a 140mg para cada 207ml, dependendo do método de preparação.</p>
+    </div>
+  </section>
+
+  <section class="bg-amber-100">
+    <div class="2xl px-6 py-10 md:px-16 md:py-14 grid justify-items-center gap-10 sm:gap-16">
+      <div class="grid md:grid-cols-3 gap-14 md:gap-9 pt-3">
+        <div class="grid justify-items-center gap-4">
+          <div class="circle circle-1 mb-4"></div>
+          <h2 class="text-3xl md:text-4xl font-bold text-zinc-950">Paulista</h2>
+          <p class="text-sm md:text-base">As condições climáticas não eram as melhores nessa primeira escolha e, entre 1800 e 1850, tentou-se o cultivo noutras regiões: o João Alberto Castelo Branco trouxe mudas do Pará.</p>
+        </div>
+
+        <div class="grid justify-items-center gap-3">
+          <div class="circle circle-2 mb-4"></div>
+          <h2 class="text-3xl md:text-4xl font-bold text-zinc-950">Carioca</h2>
+          <p class="text-sm md:text-base">As condições climáticas não eram as melhores nessa primeira escolha e, entre 1800 e 1850, tentou-se o cultivo noutras regiões: o João Alberto Castelo Branco trouxe mudas do Pará.</p>
+        </div>
+
+        <div class="grid justify-items-center gap-3">
+          <div class="circle circle-3 mb-4"></div>
+          <h2 class="text-3xl md:text-4xl font-bold text-zinc-950">Mineiro</h2>
+          <p class="text-sm md:text-base">As condições climáticas não eram as melhores nessa primeira escolha e, entre 1800 e 1850, tentou-se o cultivo noutras regiões: o João Alberto Castelo Branco trouxe mudas do Pará.</p>
+        </div>
+      </div>
+      <a href="#" class="px-6 py-2 md:px-8 md:py-3 border-4 border-zinc-950 text-base md:text-lg font-bold uppercase hover:bg-zinc-950 hover:text-neutral-100 duration-300">Saiba mais</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="2xl px-6 py-10 md:px-16 md:py-14 grid justify-items-center gap-12 md:gap-20">
+      <div class="flex flex-col sm:flex-row gap-6">
+        <figure>
+          <img src="./assets/img/botafogo.jpg" alt="Unidade da Brafé em Botafogo">
+        </figure>
+        <div class="flex flex-col gap-4">
+          <h2 class="text-3xl md:text-4xl font-bold text-zinc-950">Botafogo</h2>
+          <p class="max-w-sm text-sm md:text-lg">As condições climáticas não eram as melhores nessa primeira escolha e, entre 1800 e 1850, tentou-se o cultivo.</p>
+          <a href="#" class="px-6 py-2 md:px-6 md:py-2 border-4 border-zinc-950 text-sm md:text-lg font-bold uppercase hover:bg-zinc-950 hover:text-neutral-100 duration-300 inline-block w-min whitespace-nowrap">Ver Mapa</a>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-6">
+        <figure>
+          <img src="./assets/img/iguatemi.jpg" alt="Unidade da Brafé em Botafogo">
+        </figure>
+        <div class="flex flex-col gap-4">
+          <h2 class="text-3xl md:text-4xl font-bold text-zinc-950">Iguatemi</h2>
+          <p class="max-w-sm text-sm md:text-lg">As condições climáticas não eram as melhores nessa primeira escolha e, entre 1800 e 1850, tentou-se o cultivo.</p>
+          <a href="#" class="px-6 py-2 md:px-6 md:py-2 border-4 border-zinc-950 text-sm md:text-lg font-bold uppercase hover:bg-zinc-950 hover:text-neutral-100 duration-300 inline-block w-min whitespace-nowrap">Ver Mapa</a>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-6">
+        <figure>
+          <img src="./assets/img/mineirao.jpg" alt="Unidade da Brafé em Botafogo">
+        </figure>
+        <div class="flex flex-col gap-4">
+          <h2 class="text-3xl md:text-4xl font-bold text-zinc-950">Mineirão</h2>
+          <p class="max-w-sm text-sm md:text-lg">As condições climáticas não eram as melhores nessa primeira escolha e, entre 1800 e 1850, tentou-se o cultivo.</p>
+          <a href="#" class="px-6 py-2 md:px-6 md:py-2 border-4 border-zinc-950 text-sm md:text-lg font-bold uppercase hover:bg-zinc-950 hover:text-neutral-100 duration-300 inline-block w-min whitespace-nowrap">Ver Mapa</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-amber-100">
+    <div class="2xl px-6 py-10 md:px-16 md:py-14 flex flex-col sm:flex-row gap-8 sm:items-center newsletter">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-bold text-zinc-950">Assine nossa Newletter</h2>
+        <p class="text-xl md:text-2xl italic text-zinc-950">promoções e eventos mensais</p>
+      </div>
+      <form action="" class="flex">
+        <input type="text" id="email" name="email" placeholder="Digite seu Email" class="px-1 py-1 pl-2 md:px-6 md:py-2 border-4 border-zinc-950 m-0 bg-transparent">
+        <button type="submit" class="bg-zinc-950 px-1 py-1 md:px-6 md:py-2 border-4 border-zinc-950 text-neutral-100 uppercase tracking-wide m-0 text-xs md:text-base hover:bg-amber-700 hover:border-amber-700 font-bold duration-300 whitespace-nowrap">Enviar →</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="2xl px-6 py-10 md:px-16 md:py-10 flex flex-col md:flex-row gap-6 md:justify-between items-center">
+      <p class="max-w-md text-center order-2 text-sm md:text-base">Este é um projeto da Origamid. Mais em origamid.com
+      Praia de Botafogo, 300, 5º andar - Botafogo - Rio de Janeiro</p>
+      <figure class="order-1">
+        <img src="./assets/img/brafe.png" alt="Logo Brafé" class="h-8">
+      </figure>
+    </div>
+  </footer>
+  
+</body>
+</html>
